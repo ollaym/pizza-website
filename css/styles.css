@@ -164,3 +164,23 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0px;
+    background: #000;
+    color: #fff;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-layout{
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    align-items: center;
+    max-width: 40%;;
+}
