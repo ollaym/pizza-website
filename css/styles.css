@@ -94,26 +94,25 @@
     margin-top: -30px;
 }
 
-.navi-left{
-    position: absolute;
-    left: 5%;
-    top: 1%;
-}
-
-.navi-right{
-    position: absolute;
-    right: 5%;
-    top: 1%;
-}
-
-.navi a{
-    margin-left: 20px;
-    margin-left: 20px;
-    text-decoration: none;
+.nav a{
+    font-family: 'Dancing Script', cursive;
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
+
 }
 
-.navi a:hover{
+.nav a:hover{
     color: orangered;
+}
+
+.image1{
+    background-image: url("../images/background-basil-cheese-1435907.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.social-media{
+    position: relative;
 }
