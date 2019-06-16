@@ -1,4 +1,8 @@
-.gallery-area{
+*{
+    text-align: center;
+}
+
+.gallery-area {
     padding: 5% 0;
     position: relative;
     background-image: url("../images/baked-beer-cheese-724216.jpg");
@@ -11,8 +15,8 @@
 
 }
 
-.gallery-area:before{
-    position:absolute;
+.gallery-area:before {
+    position: absolute;
     content: "";
     background: rgba(0, 0, 0, 0.9);
     width: 100%;
@@ -21,50 +25,50 @@
     left: 0;
 }
 
-.single-gallery{
+.single-gallery {
     color: #fff;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.img-area{
+.img-area {
     width: 100%;
     border-top: 10px solid white;
-    border-left:10px solid white;
-    border-right:10px solid white;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
 }
 
-.img-area img{
+.img-area img {
     min-height: 65vh;
     max-height: 65vh;
 }
 
-.text-area{
-    background:rgba(0, 0, 0, 0.3);
+.text-area {
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
-    border-left:10px solid white;
-    border-right:10px solid white;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
     border-bottom: 10px solid white;
-    padding-top: 5px; 
+    padding-top: 5px;
 }
 
-.text-area h4{
+.text-area h4 {
     font-family: 'Dancing Script', cursive;
     font-size: 35px;
 }
 
-.text-area p{
+.text-area p {
     font-family: 'Shadows Into Light', cursive;
     line-height: 25px;
     font-size: 24px;
 }
 
-.single-gallery:hover .text-area{
+.single-gallery:hover .text-area {
     background: #fff;
     color: #000;
 }
 
-.gallery-area div.owl-nav{
+.gallery-area div.owl-nav {
     color: #fff;
     display: inline-block;
     font-size: 60px;
@@ -72,21 +76,22 @@
     margin-top: -30px;
 }
 
-.owl-prev, .owl-next{
+.owl-prev,
+.owl-next {
     position: absolute;
 }
 
-.owl-prev{
+.owl-prev {
     left: -20px;
     top: 40%;
 }
 
-.owl-next{
+.owl-next {
     right: -20px;
     top: 40%;
 }
 
- .button{
+.button {
     max-width: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -94,25 +99,48 @@
     margin-top: -30px;
 }
 
-.nav a{
+.nav a {
     font-family: 'Dancing Script', cursive;
     color: #000;
     font-size: 25px;
 
 }
 
-.nav a:hover{
+.nav a:hover {
     color: orangered;
 }
 
-.image1{
+.image1 {
     background-image: url("../images/background-basil-cheese-1435907.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     width: 100%;
     height: 50vh;
 }
 
-.social-media{
+.social-media {
     position: relative;
+}
+
+.pizza{
+    margin-top: 50px
+}
+
+.pizza:hover{
+    border-radius: 2%;
+    box-shadow: 2px 2px 20px 2px #bebeb2;
+}
+
+.pizza h4 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.pizza p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px
+}
+
+.pizza h6 {
+    font-size: 20px;
+    color: orangered;
 }
