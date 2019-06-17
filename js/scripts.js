@@ -16,38 +16,34 @@ $('#gallery-carousel').owlCarousel({
         }
     }
 })
-// business logic
-function Pizza(pizza, topping, crust) {
-    this.pizza = pizza;
-    this.topping = topping;
-    this.crust = crust;
-}
 
-Concat.prototype.wholePizza = function () {
-    return this.pizza + " " + this.topping + " " + this.crust;
-}
-
-// user ntyerface logic
 $(document).ready(function () {
-    $(".button").click(function (event) {
+
+    function Pizza (name, size, crust, topping, location, orderNo) {
+        this.orderNo = orderNo;
+        this.name = name;
+        this.size = size;
+        this.crust = crust;
+        // this.topping = topping;
+        // this.location = location;
+    };
+    $("#submit").submit(function (event) {
         event.preventDefault();
+        var nName = $(".pizza option:selected").val();
+        var nSize = $(".size option:selected").val();
+        var nCrust = $(".crust option:selected").val();
+        // var nTopping = $(".toppings option:selected").val();
+        // var nLocation = $(".delivery option:selected").val();
+        var total = parseInt(nSize) + parseInt(nCrust);
+        var order = 1;
+        order = order + 1;
+        var newPizza = new Pizza(nName, nSize, nCrust);
+        var newRow = '<tr> <th scope = "row" > ' + order + '<td id = "name" > ' + newPizza.name + '<td id = "size" > ' + newPizza.size + '<td id = "crust" > ' + newPizza.crust + '<td id = "topping" > ' + newPizza.topping + '<td id = "delivery" > ' + newPizza.delivery + '<td id = "total" > ' + total
 
-        var inputPizza = $(".button").val();
-        var inputTopping = $(".button").val();
-        var inputCrust = $(".button").val();
+        $("#pizza").append(newRow);
 
-        var myPizza = new Pizza(inputPizza, inputTopping, inputCrust);
-
-        $("ul#pizzas").append("<li><span class='pizza'>" + myPizza.wholePizza() + "</span></li>");
-        $(".button").val("");
-        $(".button").val("");
-        $(".button").val("");
-        $(".pizza").last().click(function () {
-            $("#show-pizza").show();
-            $("#show-pizza h4").show();
-            $(".pizza").text(myPizza.pizza);
-            $(".topping").text(myPizza.topping);
-            $(".crust").text(myPizza.crust);
-        })
+       
     });
-})
+
+
+});

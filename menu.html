@@ -122,62 +122,97 @@
     <div class="container">
         <div class="row form2">
             <div class="col-md-6">
-                <form action="">
+                <form  id="submit">
                     <label for="your pizza">Your Pizza</label>
-                    <select class="form-control">
-                        <option>Your Pizza</option>
-                        <option>Veg Tikka</option>
-                        <option>Chicken Tikka</option>
-                        <option>Peri peri Chicken</option>
-                        <option>BBQ Steak</option>
-                        <option>Hawaaian</option>
+                    <select class="form-control pizza">
+                        <option label="" value="23">Your Pizza</option>
+                        <option label="" value="0">Veg Tikka</option>
+                        <option label="" value="0">Chicken Tikka</option>
+                        <option label="" value="0">Peri peri Chicken</option>
+                        <option label="" value="0">BBQ Steak</option>
+                        <option label="" value="0">Hawaaian</option>
                     </select>
                     <label for="your pizza">Size</label>
-                    <select class="form-control">
-                        <option>Size</option>
-                        <option>Extra Large</option>
-                        <option>Large</option>
-                        <option>Medium</option>
-                        <option>Small</option>
+                    <select class="form-control size">
+                        <option value="1150">Extra Large</option>
+                        <option value="750">Large</option>
+                        <option value="500">Medium</option>
+                        <option value="250">Small</option>
                     </select>
                     <label for="your pizza">Crust</label>
-                    <select class="form-control">
-                        <option>Crust</option>
-                        <option>Crispy</option>
-                        <option>Stuffed</option>
-                        <option>Glutten Free</option>
+                    <select class="form-control crust">
+                        <option value="13">Crust</option>
+                        <option value="100">Crispy</option>
+                        <option value="100">Stuffed</option>
+                        <option value="100">Glutten Free</option>
                     </select>
+                    
+                    <div class="col-md-6"> 
+                        <!-- <button class="btn btn-primary mb-2 " id="submit">Proceed to Cart</button>  -->
+                        <input type="submit" class="btn btn-primary" value="Proceed to cart">
+                    </div>
                 </form>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
                 <form action="">
                     <label for="your pizza">Toppings</label>
-                    <select class="form-control">
+                    <select class="form-control toppings">
                         <option>Toppings</option>
-                        <option>Extra Veg toppings</option>
-                        <option>Extra Meat toppings</option>
+                        <option value="100">Extra Veg toppings</option>
+                        <option value="200">Extra Meat toppings</option>
                     </select>
 
-                    <label for="size">Number of pizzas</label>
-                    <input class="form-control" type="number" value="1" id="example-number-input">
                     <label for="country">Delivery</label>
-                    <select class="form-control">
+                    <select class="form-control delivery">
                         <option>No Delivery</option>
-                        <option>Nairobi</option>
-                        <option>Nairobi environs</option>
-                        <option>Out of Nairobi</option>
+                        <option value="500">Nairobi</option>
+                        <option value="200">Nairobi environs</option>
+                        <option value="100">Out of Nairobi</option>
                     </select>
                 </form>
-            </div>
+            </div> -->
             <br>
             <br>
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
-                    <div class="col-md-6"> <button type="submit" class="btn btn-primary mb-2">Choose another</button>
+                    <div class="col-md-6"> <button type="submit" class="btn btn-primary mb-2 " id="submit">Proceed to
+                            Cart</button>
                     </div>
-                    <div class="col-md-6"> <button type="submit" class="btn btn-primary mb-2">Move to Cart</button>
+                    <div class="col-md-6"> <button type="submit" class="btn btn-primary mb-2 move">Move to Cart</button>
                     </div>
                 </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Add your pizzas to cart</h3>
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">No. of Order</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Crust</th>
+                            <th scope="col">Topping</th>
+                            <th scope="col">Delivery</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pizza">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td id="name">
+
+                            </td>
+                            <td id="size"></td>
+                            <td id="cruping"></td>
+                            <td id="delivery"></td>
+                            <td id="totst"></td>
+                            <td id="topal"></td>
+                        </tr>
+                </table>
             </div>
         </div>
     </div>
@@ -190,6 +225,9 @@
     <footer>
         <p>&COPY 2019</p>
     </footer>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
