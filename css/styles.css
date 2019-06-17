@@ -1,4 +1,4 @@
-*{
+* {
     text-align: center;
 }
 
@@ -122,12 +122,12 @@
     position: relative;
 }
 
-.pizza{
+.pizza {
     margin-top: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.pizza:hover{
+.pizza:hover {
     border-radius: 2%;
     box-shadow: 2px 2px 20px 2px #bebeb2;
 }
@@ -138,7 +138,7 @@
 
 .pizza p {
     font-family: 'Dancing Script', cursive;
-    font-size: 30px
+    font-size: 30px;
 }
 
 .pizza h6 {
@@ -155,7 +155,7 @@
     margin-top: 5%;
 }
 
-footer{
+footer {
     width: 100%;
     margin-bottom: 0px;
     background: #000;
@@ -165,7 +165,7 @@ footer{
     margin-right: auto;
 }
 
-.footer{
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -177,10 +177,16 @@ footer{
     margin-right: auto;
 }
 
-.form-layout{
+.form-layout {
     margin-left: auto;
     margin-right: auto;
     align-content: center;
     align-items: center;
-    max-width: 40%;;
+    max-width: 40%;
+    ;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
 }
