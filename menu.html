@@ -121,67 +121,50 @@
     <h4>Make an Order</h4>
     <div class="container">
         <div class="row form2">
-            <div class="col-md-6">
-                <form  id="submit">
-                    <label for="your pizza">Your Pizza</label>
-                    <select class="form-control pizza">
-                        <option label="" value="23">Your Pizza</option>
-                        <option label="" value="0">Veg Tikka</option>
-                        <option label="" value="0">Chicken Tikka</option>
-                        <option label="" value="0">Peri peri Chicken</option>
-                        <option label="" value="0">BBQ Steak</option>
-                        <option label="" value="0">Hawaaian</option>
-                    </select>
-                    <label for="your pizza">Size</label>
-                    <select class="form-control size">
-                        <option value="1150">Extra Large</option>
-                        <option value="750">Large</option>
-                        <option value="500">Medium</option>
-                        <option value="250">Small</option>
-                    </select>
-                    <label for="your pizza">Crust</label>
-                    <select class="form-control crust">
-                        <option value="13">Crust</option>
-                        <option value="100">Crispy</option>
-                        <option value="100">Stuffed</option>
-                        <option value="100">Glutten Free</option>
-                    </select>
+            <div class="col-md-12">
+                <form id="submit">
+                 
+                        <label for="your pizza">Your Pizza</label>
+                        <select class="form-control pizza">
+                            <option label="" value="Veg Tikka">Veg Tikka</option>
+                            <option label="" value="Chicken Tikka">Chicken Tikka</option>
+                            <option label="" value="Peri Peri chicken">Peri peri Chicken</option>
+                            <option label="" value="BBQ Steak">BBQ Steak</option>
+                            <option label="" value="Hawaaian">Hawaaian</option>
+                        </select>
+                        <label for="your pizza">Size</label>
+                        <select class="form-control size">
+                            <option value="1150">Extra Large</option>
+                            <option value="750">Large</option>
+                            <option value="500">Medium</option>
+                            <option value="250">Small</option>
+                        </select>
+                        <label for="your pizza">Crust</label>
+                        <select class="form-control crust">
+                            <option value="100">Crispy</option>
+                            <option value="100">Stuffed</option>
+                            <option value="100">Glutten Free</option>
+                        </select>
                     
-                    <div class="col-md-6"> 
+                        <label for="your pizza">Toppings</label>
+                        <select class="form-control toppings">
+                            <option value="100">Extra Veg toppings</option>
+                            <option value="200">Extra Meat toppings</option>
+                        </select>
+
+                        <label for="country">Delivery</label>
+                        <select class="form-control delivery">
+                            <option value="0">No Delivery</option>
+                            <option value="100">Nairobi</option>
+                            <option value="200">Nairobi environs</option>
+                            <option value="500">Out of Nairobi</option>
+                        </select>
                         <!-- <button class="btn btn-primary mb-2 " id="submit">Proceed to Cart</button>  -->
                         <input type="submit" class="btn btn-primary" value="Proceed to cart">
-                    </div>
                 </form>
             </div>
-            <!-- <div class="col-md-6">
-                <form action="">
-                    <label for="your pizza">Toppings</label>
-                    <select class="form-control toppings">
-                        <option>Toppings</option>
-                        <option value="100">Extra Veg toppings</option>
-                        <option value="200">Extra Meat toppings</option>
-                    </select>
-
-                    <label for="country">Delivery</label>
-                    <select class="form-control delivery">
-                        <option>No Delivery</option>
-                        <option value="500">Nairobi</option>
-                        <option value="200">Nairobi environs</option>
-                        <option value="100">Out of Nairobi</option>
-                    </select>
-                </form>
-            </div> -->
             <br>
             <br>
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-6"> <button type="submit" class="btn btn-primary mb-2 " id="submit">Proceed to
-                            Cart</button>
-                    </div>
-                    <div class="col-md-6"> <button type="submit" class="btn btn-primary mb-2 move">Move to Cart</button>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
     <div class="container">
@@ -202,7 +185,7 @@
                     </thead>
                     <tbody id="pizza">
                         <tr>
-                            <th scope="row">1</th>
+                            <th scope="row"></th>
                             <td id="name">
 
                             </td>
